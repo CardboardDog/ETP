@@ -2,6 +2,7 @@
 #include<stdio.h>
 #ifndef NO_SDL2
 #include<SDL2/SDL.h>
+#include<SDL2_ETP/ETP_Image.h>
 #endif
 int main(){
     etp_base* my_image = etp_create_base();
@@ -34,6 +35,13 @@ int main(){
             }
         }
     }
+    SDL_Texture* texture = ETP_LoadTexture(renderer,"etp.etp");
+    SDL_Rect rect;
+    rect.w = 255;
+    rect.h = 255;
+    rect.x = 255;
+    rect.y = 0;
+    SDL_RenderCopy(renderer,texture,0,&rect);
     SDL_RenderPresent(renderer);
     SDL_UpdateWindowSurface(window);
     SDL_Delay(2000);
