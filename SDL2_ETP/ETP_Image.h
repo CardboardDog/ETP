@@ -1,3 +1,12 @@
+/*
+
+    SDL2 ETP (c) 2024 EN
+    VERSION 1.0
+    THIS FILE IS UNDER THE MIT LICENSE
+    https://github.com/CardboardDog/ETP/blob/main/LICENSE
+
+*/
+
 #ifndef SDL_ETP_
 #define SDL_ETP_
 
